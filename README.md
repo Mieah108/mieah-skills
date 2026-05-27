@@ -6,7 +6,7 @@ Natural language skills for Claude Code agent tooling.
 
 | Skill | Purpose | Prerequisites |
 |-------|---------|---------------|
-| [`ieee-search`](./skills/ieee-search/SKILL.md) | Search IEEE Xplore via browser automation (agent-browser CLI, Chrome MCP, or Firefox MCP). No API key required. Supplements paper-search which cannot search IEEE without an API key. | `npm i -g agent-browser && agent-browser install` |
+| [`ieee-search`](./skills/ieee-search/SKILL.md) | Search IEEE Xplore via browser automation (agent-browser CLI, Chrome MCP, or Firefox MCP). No API key required. Supplements paper-search which cannot search IEEE without an API key. Access to IEEE depends on local network situation.| `npm i -g agent-browser && agent-browser install` |
 
 ## Installation
 
