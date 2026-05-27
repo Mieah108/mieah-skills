@@ -1,11 +1,11 @@
-# wzy108/skills
+# Mieah108/mieah-skills
 
 Personal skill collection for Claude Code, installable via [skills.sh](https://skills.sh).
 
 ## Install
 
 ```bash
-npx skills add wzy108/skills
+npx skills add Mieah108/mieah-skills
 ```
 
 ## Skills
