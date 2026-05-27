@@ -1,19 +1,38 @@
-# Mieah108/mieah-skills
+# Mieah Skills
 
-Personal skill collection for Claude Code, installable via [skills.sh](https://skills.sh).
-
-## Install
-
-```bash
-npx skills add Mieah108/mieah-skills
-```
+Natural language skills for Claude Code agent tooling.
 
 ## Skills
 
-| Skill | Description |
-|-------|-------------|
-| [ieee-search](./skills/ieee-search/SKILL.md) | Search IEEE Xplore via browser automation (agent-browser CLI, Chrome MCP, or Firefox MCP). No API key needed. |
+| Skill | Purpose | Prerequisites |
+|-------|---------|---------------|
+| [`ieee-search`](./skills/ieee-search/SKILL.md) | Search IEEE Xplore via browser automation (agent-browser CLI, Chrome MCP, or Firefox MCP). No API key required. Supplements paper-search which cannot search IEEE without an API key. | `npm i -g agent-browser && agent-browser install` |
 
-## Skill Structure
+## Installation
 
-Each skill lives under `skills/<name>/SKILL.md` following the [skills.sh](https://skills.sh/docs) format.
+### Via skills.sh (Recommended)
+
+```bash
+# Install all skills from this repo
+npx skills add Mieah108/mieah-skills
+
+# Or install a specific skill
+npx skills add Mieah108/mieah-skills --skill ieee-search
+```
+
+### Via Claude Plugin
+
+```bash
+/plugin install Mieah108/mieah-skills
+```
+
+### Manual Installation
+
+```bash
+git clone git@github.com:Mieah108/mieah-skills.git
+/plugin add ./mieah-skills
+```
+
+## License
+
+MIT
