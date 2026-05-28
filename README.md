@@ -1,10 +1,10 @@
 # Mieah Skills
 
-Natural language skills for Claude Code agent tooling.
+Some Skills.
 
 ## Skills
 
-| Skill | Purpose | Prerequisites |
+| Skill | Description | Prerequisites |
 |-------|---------|---------------|
 | [`ieee-search`](./skills/ieee-search/SKILL.md) | Search IEEE Xplore via browser automation (agent-browser CLI, Chrome MCP, or Firefox MCP). No API key required. Supplements paper-search which cannot search IEEE without an API key. Access to IEEE depends on local network situation.| `npm i -g agent-browser && agent-browser install` |
 
@@ -28,6 +28,7 @@ npx skills add Mieah108/mieah-skills --skill ieee-search
 
 ### Manual Installation
 
+Clone and install as a Claude Code plugin:
 ```bash
 git clone git@github.com:Mieah108/mieah-skills.git
 /plugin add ./mieah-skills
